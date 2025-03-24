@@ -1,4 +1,5 @@
 Flask
+gunicorn
 Pillow
 # animegan  Assurez-vous que AnimeGAN est installé et configuré correctement
 werkzeug
