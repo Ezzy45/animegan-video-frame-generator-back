@@ -27,5 +27,6 @@ def upload_image():
 
     return jsonify({"frames": frames})  # Retourner les chemins des frames
 
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))  # Utilise le port spécifié par Render, ou 5000 par défaut
+    app.run(host='0.0.0.0', port=port)
